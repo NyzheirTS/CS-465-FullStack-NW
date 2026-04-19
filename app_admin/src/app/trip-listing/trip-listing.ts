@@ -12,7 +12,7 @@ import { Authentication } from '../services/authentication';
   standalone: true,
   imports: [CommonModule, TripCard],
   templateUrl: './trip-listing.html',
-  styleUrl: './trip-listing.css',
+  styleUrls: ['./trip-listing.css'],
   providers: [TripData]
 })
 
@@ -52,6 +52,10 @@ export class TripListing implements OnInit {
 
   public isLoggedIn() {
     return this.authenticationService.isLoggedIn();
+  }
+
+  removeTrip(code: string) {
+    this.trips = this.trips.filter(trip => trip.code !== code);
   }
 
 

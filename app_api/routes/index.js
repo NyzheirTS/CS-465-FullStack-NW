@@ -21,7 +21,9 @@ router
 router // get method routes tripsFindByCode - requires parameter
     .route('/trips/:tripCode')
     .get(tripsController.tripsFindByCode)
-    .put(authenticateJWT, tripsController.tripsUpdateTrip);
+    .put(authenticateJWT, tripsController.tripsUpdateTrip)
+    .delete(authenticateJWT, tripsController.tripsDeleteOne)
+
 router
     .route('/meals')
     .get(mealsController.mealsList)
