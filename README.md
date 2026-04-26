@@ -1,2 +1,12 @@
 # CS-465-FullStack-NW
-CS-465 Full Stack Development with MEAN Stack
+Architecture
+	Using express we generate html on the server and send fully rendered pages to the client, making this a simple way to send and render pages but it is not as dynamic as our SPA meaning each major navigation would require a full page reload. In contrast, our SPA relies on client-side JavaScript to dynamically update the UI without refreshing the entire page, creating a smoother, faster user experience.  Our backend used MongoDB, a NoSQL database, due to its offered flexibility in handling unstructured data. MongoDB stores data in Json like documents which make it easy to implement in our application and go through many faster iterations. 
+Functionality
+	JSON differs from JavaScript in that it is strictly a data format rather than a coding language. JSON acts as a middleman between the front and backend of applications, standardizing how data is sent through API requests and responses. An example of a big refactor that took place during development was transferring all the static html views to dynamic handlebar views with Api integration. This helped reduce duplicated code and made debugging pieces that were not working easier. 
+
+
+Testing
+	HTTP methods determine the type of operation that is being performed, endpoints specify where these requests are sent. Testing these methods and endpoints involves verifying that each endpoint correctly handles requests and returns the expected responses, we can use tools like Postman to help this process. Many endpoints might require authentication tokens or role-based permissions, which must also be tested. Tools like Postman will also have tools to help verify authentication methods are working properly and your data is protected.
+Reflection
+	This course has helped me move close to my professional goals by giving me hands on experience with full stack development a deeper understanding of how frontend and backend systems interact. I’ve further developed practical skills in building API’s, managing databases, and creating interactive and responsive user interfaces. I also gained experience in how to structure applications and their project structures to more efficiently work on them and increase maintainability. These skills make me a stronger, more marketable candidate because they demonstrate that I not only have technical proficiency but also am able to design and implement complete applications. 
+
